@@ -18,7 +18,7 @@ public class YGApiClient {
     private String accessKey;
     private String secretKey;
     private String signature;
-    private static final String GATEWAY = "http://localhost:8082";
+    private static final String GATEWAY = "http://localhost:8081";
     private static final String API_IP_ADDRESS = "/api/ip/ipaddress";
     private static final String API_WEATHER = "/api/weather";
     private static final String API_PHONE_LOCATION = "/api/common/teladress";
