@@ -1,19 +1,19 @@
 package icu.yeguo.yeguoapisdk.config;
 
-import icu.yeguo.yeguoapisdk.client.YGAPIClient;
+import icu.yeguo.yeguoapisdk.client.YGApiClient;
 import lombok.Data;
 import org.springframework.boot.context.properties.ConfigurationProperties;
 import org.springframework.context.annotation.Bean;
 
 @ConfigurationProperties(prefix = "yeguo.api")
 @Data
-public class YGAPIClientConfig {
+public class YGApiClientConfig {
 
     public String accessKey;
     public String secretKey;
 
     @Bean
-    public YGAPIClient ygapiClient() {
-        return new YGAPIClient(accessKey, secretKey);
+    public YGApiClient ygapiClient() {
+        return new YGApiClient(accessKey, secretKey);
     }
 }
