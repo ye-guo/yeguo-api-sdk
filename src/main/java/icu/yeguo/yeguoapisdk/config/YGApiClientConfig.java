@@ -11,9 +11,10 @@ public class YGApiClientConfig {
 
     public String accessKey;
     public String secretKey;
+    public String gateway;
 
     @Bean
     public YGApiClient ygapiClient() {
-        return new YGApiClient(accessKey, secretKey);
+        return new YGApiClient(accessKey, secretKey, gateway);
     }
 }
